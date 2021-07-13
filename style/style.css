@@ -49,6 +49,7 @@ body{
     grid-gap: 27px 30px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 160px;
     
 }
 
@@ -78,6 +79,41 @@ body{
 .discription p{  
     font-size: 16px;
 }
+
+/*====================================
+            Highlights 
+====================================*/
+
+#highlights{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.content{
+    width: 469px;
+    height: 309px;
+}
+.content h3{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 8px;
+    
+}
+.content p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+
+.highlights-img img{
+    width: 567px;
+    height: 427px;
+}
+
+
 
 
 
