@@ -87,6 +87,7 @@ body{
 #highlights{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 120px;
 
 
 }
@@ -113,6 +114,41 @@ body{
     height: 427px;
 }
 
+/*==============================
+            Footer 
+==============================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer img{
+    width: 489px;
+    height: 110px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon a{
+    display: block;
+    background-color: white;
+    font-size: 32px;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+
+.social-icon a .fab{
+    font-size: 32px;
+    color: #969BAB;
+}
+
+
 
 
 
@@ -121,7 +157,7 @@ body{
 /*==============================
             Utilities 
 ==============================*/
-a{
+#container1 a, #highlights a{
     background-color: #E02C6D;
     padding: 10px 24px;  
     color: white;
