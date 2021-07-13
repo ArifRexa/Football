@@ -31,11 +31,28 @@ body{
     width: 485px;
     
 }
+.heading-img{
+    position: relative;
+}
+
+.heading-img:hover  img{
+    opacity: 0;
+}
+.heading-img:hover img.hover{
+    opacity: 1;
+    transition: linear 1s;
+}
 
 .heading-img img{
     width: 556.01px;
     height: 438px;
     padding-top: 10px;
+    transition: linear 1s;
+}
+img.hover{
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 
@@ -166,3 +183,11 @@ footer img{
     width: 168px;
     
 }
+
+#container1 a:hover, #highlights a:hover{
+    background-color: blueviolet;
+    transition-duration:  1s;
+    cursor: pointer;
+}
+
+
