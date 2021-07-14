@@ -284,8 +284,8 @@ footer p{
         display: grid;
         grid-template-columns: repeat(1,330px);
         grid-row-gap: 24px;
-        margin-left: 20%;
-        margin-right: 20%;
+        /* margin-left: 20%;
+        margin-right: 20%; */
         margin-bottom: 60px;
         
     }
