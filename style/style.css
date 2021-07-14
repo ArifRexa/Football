@@ -20,6 +20,12 @@ body{
     background-color: #1b18c9;
 }
 
+
+#container1:hover .heading-primary p, 
+#container1:hover .heading-img img{
+    transform: rotate(360deg);
+}
+
 .heading{
     display: flex;
     justify-content:space-between;
@@ -71,9 +77,9 @@ img.hover{
     display: grid;
     grid-template-columns: repeat(3,330px);
     grid-gap: 27px 30px;
-    margin-left: 10%;
+    margin-left: 11%;
     margin-right: 10%;
-    margin-bottom: 160px;
+    margin-bottom: 165px;
     
 }
 
@@ -141,13 +147,16 @@ img.hover{
         Up Coming Match 
 ==============================*/
 #matchs{
-    background-color: rgba(186, 238, 240, 0.616);
+    background-color:  white;
+    box-shadow: 0px 0px 20px gray;
     margin-bottom: 160px;
+    height: 460px;
     
 }
 #matchs h1{
     font-size: 55px;
     text-align: center;
+    padding-bottom: 10px;
     
 }
 .match{
@@ -155,16 +164,28 @@ img.hover{
     justify-content: space-evenly;
     
 }
+
 .match-container1:hover,
 .match-container2:hover,
 .match-container3:hover{
     transform: scale(1.3);
+    background-image: linear-gradient(to right, yellow, rgb(211, 55, 55), yellow);
+
      
 }
-.match-container1,.match-container2,.match-container3{
-    transition: transform 1s;
+.match-container1,
+.match-container2,
+.match-container3{
+    height: 260px;
+    width: 255px;
+    box-shadow: 0px 0px 15px gray;
+    transition: all 1s ;
+    
+    
 }
-.match-container1 h2, .match-container2 h2, .match-container3 h2{
+.match-container1 h2,
+.match-container2 h2,
+.match-container3 h2{
     height: 200px;
     width: 250px;
     text-align: center;
@@ -178,8 +199,9 @@ img.hover{
             Sponsors 
 ==============================*/
 .sponsors-container{
-    background-color: rgba(253, 233, 203, 0.637);
-    margin-bottom: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 40px gray;
+    margin-bottom: 150px;
 }
 .sponsors{
     margin-left: 10%;
@@ -222,15 +244,18 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 63px;
 
 }
 footer img{
     width: 489px;
     height: 110px;
+    margin-bottom: 20px;
 }
 .social-icon{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 footer p{
@@ -264,7 +289,7 @@ footer p{
     text-decoration: none;
     font-size: 16px;
     width: 168px;
-    transition: background-color 1s;
+    transition: all 1s;
     
 }
 
@@ -275,10 +300,14 @@ footer p{
 }
 
 
-/*=================================
-            Responsive
-==================================*/
+/*======================================================================================================
+                                    Responsive for Mobile
+======================================================================================================*/
 @media only screen and (max-width:688px){
+
+/*==============================
+             Header 
+==============================*/
     .heading-primary p{
         font-weight: bold;
         font-size: 34px;
@@ -300,6 +329,9 @@ footer p{
     }
 
 
+/*====================================
+            Player Section 
+====================================*/
 
     #container{
         margin-top: 47px;
@@ -307,7 +339,7 @@ footer p{
         grid-template-columns: repeat(1,330px);
         grid-row-gap: 24px;
         margin-bottom: 60px;
-        margin-left: 9%;
+        margin-left: 8%;
         
     }
     .player-container{
@@ -316,6 +348,11 @@ footer p{
         background-color: white;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     }
+
+
+/*====================================
+            Highlights 
+====================================*/
 
 
     #highlights{
@@ -335,7 +372,20 @@ footer p{
         height: 248px;
     }
 
-
+/*==============================
+        Up Coming Match 
+==============================*/
+    #matchs{
+        background-color:  white;
+        box-shadow: 0px 0px 20px gray;
+        margin-bottom: 160px;
+        height: 1080px;
+        
+    }
+    #matchs h1{
+        font-size: 55px;
+        text-align: center;   
+    }
 
     .match{
         display: flex;
@@ -345,6 +395,29 @@ footer p{
     }
 
 
+    .match-container1,
+    .match-container2,
+    .match-container3{
+    height: 280px;
+    width: 255px;
+    box-shadow: 0px 0px 15px gray;
+    font-size: 30px;
+    margin-bottom: 30px;
+    
+    }
+
+    .match-container1:hover,
+    .match-container2:hover,
+    .match-container3:hover{
+        transform: scale(1.1);
+        background-image: none;
+
+        
+    }
+
+/*==============================
+            Sponsors 
+==============================*/
     .sponsors-img{
         display: flex;
         flex-direction: column;
@@ -357,7 +430,9 @@ footer p{
         width: 110px;
         margin-bottom: 40px;}
 
-
+/*==============================
+            Footer 
+==============================*/
     footer img{
         width: 275px;
         height: 63px;
