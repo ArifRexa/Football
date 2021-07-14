@@ -74,7 +74,7 @@ img.hover{
     width: 330px;
     height: 474px;
     background-color: white;
-    box-shadow: 0px 0px 40px gray;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
 .player-img img{
@@ -105,8 +105,6 @@ img.hover{
     display: flex;
     justify-content: space-around;
     margin-bottom: 160px;
-
-
 }
 .content{
     width: 469px;
@@ -220,6 +218,10 @@ footer img{
     justify-content: center;
 }
 
+footer p{
+    font-size: 18px;
+}
+
 .social-icon a{
     display: block;
     background-color: white;
@@ -254,6 +256,97 @@ footer img{
     background-color: blueviolet;
     transition-duration:  1s;
     cursor: pointer;
+}
+
+
+/*=================================
+            Responsive
+==================================*/
+@media only screen and (max-width:688px){
+    .heading{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .heading-img img{
+        width: 556.01px;
+        height: 438px;
+        margin-top: 50px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 62px;  
+    }
+
+
+
+    #container{
+        margin-top: 47px;
+        display: grid;
+        grid-template-columns: repeat(1,330px);
+        grid-row-gap: 24px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 60px;
+        
+    }
+    .player-container{
+        width: 330px;
+        height: 474px;
+        background-color: white;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+
+
+    #highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-around; */
+        /* margin-bottom: 160px; */
+    
+    }
+    .content{
+        width: 329px;
+        height: 299px;
+        margin-bottom: 170px;
+    }
+    
+    .highlights-img img{
+        width: 328px;
+        height: 248px;
+    }
+
+
+
+    .match{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .sponsors-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+    .sponsors-img img.sizing {
+        height: 110px;
+        width: 110px;
+        margin-bottom: 40px;}
+
+
+    footer img{
+        width: 275px;
+        height: 63px;
+    }
+
+
+
+    
 }
 
 
