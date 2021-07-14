@@ -104,7 +104,7 @@ img.hover{
 #highlights{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
 
 
 }
@@ -130,6 +130,46 @@ img.hover{
     width: 567px;
     height: 427px;
 }
+
+
+/*==============================
+            Sponsors 
+==============================*/
+.sponsors-container{
+    background-color: rgba(253, 233, 203, 0.637);
+    margin-bottom: 100px;
+}
+.sponsors{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.sponsors h1{
+    text-align: center;
+    font-size: 48px;
+}
+.sponsors-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.sponsors-img:hover img{
+    transform: scale(1.3);
+    transition: transform .7s;
+
+}
+.sponsors-img img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    
+}
+.sponsors-img img.sizing{
+    height: 100px;
+    width: 100px;
+}
+
 
 /*==============================
             Footer 
@@ -164,10 +204,6 @@ footer img{
     font-size: 32px;
     color: #969BAB;
 }
-
-
-
-
 
 
 
