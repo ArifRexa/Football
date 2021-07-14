@@ -293,7 +293,7 @@ footer p{
         grid-template-columns: repeat(1,330px);
         grid-row-gap: 24px;
         margin-bottom: 60px;
-        margin-left: 4%;
+        margin-left: 6%;
         
     }
     .player-container{
